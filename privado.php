@@ -2,24 +2,18 @@
 
 
 <?php
-
 // Continuamos la sesión
 session_start();
-
-echo "Hola".$_SESSION['username'];
-
+// si no existe una sesión llamada username redirigir a pantalla de noacceso.php
 if(!isset($_SESSION['username'])){
     header('Location: noacceso.php');
     exit();
 }
 
-
-
 // Devolver los valores de sesión
 echo "Hola " . $_SESSION["username"] ." bienvenido a la sesión privada.";
 
 ?>
-
 
     <h1>Esto es una zona super secreta</h1>
 
@@ -31,6 +25,6 @@ echo "Hola " . $_SESSION["username"] ." bienvenido a la sesión privada.";
 
     <p>Perferendis dolores cum ratione at, quidem illum nesciunt aliquam, qui inventore impedit velit nobis ducimus maxime consequatur doloribus libero veniam suscipit quo dolore! Soluta dolores culpa provident, quibusdam animi hic necessitatibus beatae, blanditiis dolorum, voluptates error autem quo! Dolorum, tenetur vitae? Ratione maxime molestiae nulla voluptatum asperiores voluptate maiores omnis quis autem modi, doloribus placeat error laboriosam numquam ea ut harum libero, cupiditate quos officiis hic? Neque et explicabo numquam doloribus sapiente dolorem ratione, illo incidunt illum porro sunt atque sint aspernatur labore molestias temporibus cupiditate sequi reiciendis modi! Commodi odio ducimus numquam rerum ad suscipit praesentium doloribus, nesciunt esse? Ex id numquam mollitia aliquam quasi rem ducimus alias obcaecati possimus laboriosam maiores, ea eligendi error illo iure minus explicabo, et nulla saepe ratione! Temporibus nam, perferendis quae magnam quod ex dicta molestiae sequi, asperiores atque nihil similique veritatis incidunt sed? Non, ut voluptatibus? Quis inventore, sint laudantium eaque fugiat ipsam aperiam fuga natus non veritatis architecto quae dignissimos culpa temporibus fugit commodi repellendus neque omnis totam vel voluptate velit? Dolorum vel necessitatibus reprehenderit suscipit? Culpa architecto sed tempora!</p>
    
-   <a href="index.php">Volver al Inicio</a>
+    <a href="index.php">Volver al Inicio</a>
    
     <?php include '_footer.php';?>

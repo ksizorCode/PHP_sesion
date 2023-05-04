@@ -1,7 +1,6 @@
 <?php include '_header.php';?>
 
 <?php
-
 session_start();
 // Eliminar el nombre de usuario:
 unset($_SESSION["username"]);
@@ -13,8 +12,7 @@ session_unset();
 session_destroy();
 ?>
 
-
     <h1>Se ha cerrado la sesión</h1>
     <a href="index.php" class="active">Volver a Inicio</a>
     
-    <?php include '_footer.php';?>
+    <?php include '_footer.php';?>  
